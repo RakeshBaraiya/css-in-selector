@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intital-scale=1.0">
+        <title> Different selectors in CSS</title>
+        <style>
+            /* Element Selecor Syntax{
+
+            property:value;
+            }*/
+            div{
+                width:200px;
+                height:200px;
+                background-color:red;
+            }
+            /* 2. CSS Id Selector symbol.#
+            element#id {
+             property:valu;
+            }
+             */
+             Span#a1{
+                display:block;
+                width:200px;
+                height:200px;
+                background:aqua;
+
+             }
+             /* 3. CSS Id Selector symbol.#
+            element.class {
+             property:valu;
+            }
+             */
+             span.b1{
+                display:block;
+                width:200px;
+                height:200px;
+                background:purple;
+             }
+             /* 4.CSS Attribute selector symbol (anchor a)
+            element=[name="value"]{
+             property:valu;
+            }
+             */
+             a[href="http://oklabs.in"]{
+                display:block;
+                width:200px;
+                height:200px;
+                background:lavender;
+             }
+             /* 5.CSS Universal selector ( * )
+             *{
+                property:valu; 
+             }
+             */
+            *{
+                border:10px solid black;
+            }
+            /* 6.CSS group/combinational selector ( , )
+             *{
+                property:valu; 
+             }
+             */
+            div,span#a1,span.b1,a[href="https://oklabs.in"]{
+                display:inline-block;
+            }
+            /* 7.CSS  Pesudo Element selector ( :: )
+             element::Selector{
+                 property:valu;
+             }
+             */
+            h1::after{
+                content: url(https://media.tenor.com/IYI9fQ41PWQAAAAj/yolande.gif);
+            }
+            /* 8.CSS  Pesudo class selector (:)
+             element:Selector{
+                 property:valu;
+             }*/
+             div#c1:hover{
+                background:green;
+             }
+        </style>
+    </head>
+    <body>
+        <div> element selector </div>
+        <span id="a1">CSS Id Selector # </span>
+        <span class="b1">CSS Class Selector</span>
+        <a href="https://oklabs.in">CSS Attribute Selector</a>
+        <h1> css pesudo element :: </h1>
+        <div id="c1"> css pesudo class Selector</div>
+    </body>
+</html>
